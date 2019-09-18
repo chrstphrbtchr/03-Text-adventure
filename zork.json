@@ -1,0 +1,4457 @@
+{
+    "verbs": [
+      {
+        "v": "EXITS",
+        "map": "EXITS"
+      },
+      {
+        "v": "QUIT",
+        "map": "QUIT"
+      },
+      {
+        "v": "Q",
+        "map": "QUIT"
+      },
+      {
+        "v": "GET ME OUT OF HERE!",
+        "map": "QUIT"
+      },
+      {
+        "v": "NORTH",
+        "map": "NORTH"
+      },
+      {
+        "v": "N",
+        "map": "NORTH"
+      },
+      {
+        "v": "SOUTH",
+        "map": "SOUTH"
+      },
+      {
+        "v": "S",
+        "map": "SOUTH"
+      },
+      {
+        "v": "EAST",
+        "map": "EAST"
+      },
+      {
+        "v": "E",
+        "map": "EAST"
+      },
+      {
+        "v": "WEST",
+        "map": "WEST"
+      },
+      {
+        "v": "W",
+        "map": "WEST"
+      },
+      {
+        "v": "NE",
+        "map": "NE"
+      },
+      {
+        "v": "NORTHEAST",
+        "map": "NE"
+      },
+      {
+        "v": "NW",
+        "map": "NW"
+      },
+      {
+        "v": "NORTHWEST",
+        "map": "NW"
+      },
+      {
+        "v": "SE",
+        "map": "SE"
+      },
+      {
+        "v": "SOUTHEAST",
+        "map": "SE"
+      },
+      {
+        "v": "SOUTHWEST",
+        "map": "SW"
+      },
+      {
+        "v": "UP",
+        "map": "UP"
+      },
+      {
+        "v": "U",
+        "map": "UP"
+      },
+      {
+        "v": "DOWN",
+        "map": "DOWN"
+      },
+      {
+        "v": "D",
+        "map": "DOWN"
+      },
+      {
+        "v": "ENTER",
+        "map": "ENTER"
+      },
+      {
+        "v": "OUT",
+        "map": "OUT"
+      },
+      {
+        "v": "EXIT",
+        "map": "EXIT"
+      },
+      {
+        "v": "LEAVE",
+        "map": "LEAVE"
+      },
+      {
+        "v": "LAND",
+        "map": "LAND"
+      },
+      {
+        "v": "#!#!#",
+        "map": "#!#!#"
+      },
+      {
+        "v": "LAUNC",
+        "map": "LAUNC"
+      },
+      {
+        "v": "CROSS",
+        "map": "CROSS"
+      },
+      {
+        "v": "TAKE",
+        "map": "TAKE"
+      },
+      {
+        "v": "GET",
+        "map": "TAKE"
+      }
+    ],
+    "rooms": {
+      "WHOUS": {
+        "name": "Aragain Falls",
+        "desc": "This is an open field west of a white house, with a boarded front door.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "NHOUS",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "SHOUS",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "FORE1",
+            "condition": ""
+          },
+          {
+            "verb": "QUIT",
+            "target": "QUIT",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "NHOUS": {
+        "name": "North of House",
+        "desc": "You are facing the north side of a white house.  There is no door here,\r\nand all the windows are barred.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "WHOUS",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "EHOUS",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "FORE3",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "SHOUS": {
+        "name": "South of House",
+        "desc": "You are facing the south side of a white house. There is no door here,\r\nand all the windows are barred.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "WHOUS",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "EHOUS",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "FORE2",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "EHOUS": {
+        "name": "Behind House",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "NHOUS",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "SHOUS",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "CLEAR",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "KITCH",
+            "condition": ""
+          },
+          {
+            "verb": "ENTER",
+            "target": "KITCH",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "KITCH": {
+        "name": "Kitchen",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "EHOUS",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "LROOM",
+            "condition": ""
+          },
+          {
+            "verb": "EXIT",
+            "target": "EHOUS",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "ATTIC",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "ATTIC": {
+        "name": "Attic",
+        "desc": "This is the attic.  The only exit is stairs that lead down.",
+        "exits": [
+          {
+            "verb": "DOWN",
+            "target": "KITCH",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LROOM": {
+        "name": "Living Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "KITCH",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "BLROO",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "CELLA",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "FORE1": {
+        "name": "Forest",
+        "desc": "This is a forest, with trees in all directions around you.",
+        "exits": [
+          {
+            "verb": "UP",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "FORE1",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "FORE3",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "FORE2",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "FORE1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "FORE2": {
+        "name": "Forest",
+        "desc": "This is a dimly lit forest, with large trees all around.  To the\r\neast, there appears to be sunlight.",
+        "exits": [
+          {
+            "verb": "UP",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "SHOUS",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "CLEAR",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "FORE4",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "FORE1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "FORE3": {
+        "name": "Forest",
+        "desc": "This is a dimly lit forest, with large trees all around.  One\r\nparticularly large tree with some low branches stands here.",
+        "exits": [
+          {
+            "verb": "UP",
+            "target": "TREE",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "FORE2",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "CLEAR",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "CLEAR",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "NHOUS",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "TREE": {
+        "name": "Up a Tree",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "DOWN",
+            "target": "FORE3",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "FORE4": {
+        "name": "Forest",
+        "desc": "This is a large forest, with trees obstructing all views except\r\nto the east, where a small clearing may be seen through the trees.",
+        "exits": [
+          {
+            "verb": "UP",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "CLTOP",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "FORE5",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "FORE4",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "FORE2",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "FORE5": {
+        "name": "Forest",
+        "desc": "This is a forest, with trees in all directions around you.",
+        "exits": [
+          {
+            "verb": "UP",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "FORE5",
+            "condition": ""
+          },
+          {
+            "verb": "SE",
+            "target": "CLTOP",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "FORE4",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "FORE2",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CLEAR": {
+        "name": "Clearing",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "SW",
+            "target": "EHOUS",
+            "condition": ""
+          },
+          {
+            "verb": "SE",
+            "target": "FORE5",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "CLEAR",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "CLEAR",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "FORE3",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "FORE2",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "MGRAT",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CELLA": {
+        "name": "Cellar",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "MTROL",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "CHAS2",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "LROOM",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MTROL": {
+        "name": "The Troll Room",
+        "desc": "This is a small room with passages off in all directions. \r\nBloodstains and deep scratches (perhaps made by an axe) mar the\r\nwalls.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "CELLA",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "CRAW4",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "PASS1",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MAZE1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "STUDI": {
+        "name": "Studio",
+        "desc": "This is what appears to have been an artist's studio.  The walls\r\nand floors are splattered with paints of 69 different colors. \r\nStrangely enough, nothing of value is hanging here.  At the north and\r\nnorthwest of the room are open doors (also covered with paint).  An\r\nextremely dark and narrow chimney leads up from a fireplace; although\r\nyou might be able to get up it, it seems unlikely you could get back\r\ndown.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "CRAW4",
+            "condition": ""
+          },
+          {
+            "verb": "NW",
+            "target": "GALLE",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "KITCH",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "GALLE": {
+        "name": "Gallery",
+        "desc": "This is an art gallery.  Most of the paintings which were here\r\nhave been stolen by vandals with exceptional taste.  The vandals\r\nleft through either the north, south, or west exits.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "CHAS2",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "STUDI",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "BKENT",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MAZE1": {
+        "name": "Maze",
+        "desc": "This is part of a maze of twisty little passages, all alike.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "MTROL",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "MAZE1",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MAZE2",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "MAZE4",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MAZE2": {
+        "name": "Maze",
+        "desc": "This is part of a maze of twisty little passages, all alike.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "MAZE1",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "MAZE4",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "MAZE3",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MAZE3": {
+        "name": "Maze",
+        "desc": "This is part of a maze of twisty little passages, all alike.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "MAZE2",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "MAZE4",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "MAZE5",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MAZE4": {
+        "name": "Maze",
+        "desc": "This is part of a maze of twisty little passages, all alike.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "MAZE3",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "MAZE1",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "DEAD1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "DEAD1": {
+        "name": "You have come to a dead end in the maze.",
+        "desc": "Dead End",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "MAZE4",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MAZE5": {
+        "name": "Maze",
+        "desc": "This is part of a maze of twisty little passages, all alike.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "DEAD2",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "MAZE3",
+            "condition": ""
+          },
+          {
+            "verb": "SW",
+            "target": "MAZE6",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "DEAD2": {
+        "name": "You have come to a dead end in the maze.",
+        "desc": "Dead End",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "MAZE5",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MAZE6": {
+        "name": "Maze",
+        "desc": "This is part of a maze of twisty little passages, all alike.",
+        "exits": [
+          {
+            "verb": "DOWN",
+            "target": "MAZE5",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "MAZE7",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "MAZE6",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "MAZE9",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MAZE7": {
+        "name": "Maze",
+        "desc": "This is part of a maze of twisty little passages, all alike.",
+        "exits": [
+          {
+            "verb": "UP",
+            "target": "MAZ14",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "MAZE6",
+            "condition": ""
+          },
+          {
+            "verb": "NE",
+            "target": "DEAD1",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "MAZE8",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MAZ15",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MAZE8": {
+        "name": "Maze",
+        "desc": "This is part of a maze of twisty little passages, all alike.",
+        "exits": [
+          {
+            "verb": "NE",
+            "target": "MAZE7",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "MAZE8",
+            "condition": ""
+          },
+          {
+            "verb": "SE",
+            "target": "DEAD3",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "DEAD3": {
+        "name": "Dead End",
+        "desc": "Dead End",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "MAZE8",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MAZE9": {
+        "name": "Maze",
+        "desc": "This is part of a maze of twisty little passages, all alike.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "MAZE6",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "MAZ11",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "MAZ10",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MAZ13",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "MAZ12",
+            "condition": ""
+          },
+          {
+            "verb": "NW",
+            "target": "MAZE9",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MAZ10": {
+        "name": "Maze",
+        "desc": "This is part of a maze of twisty little passages, all alike.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "MAZE9",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "MAZ13",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "MAZ11",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MAZ11": {
+        "name": "Maze",
+        "desc": "This is part of a maze of twisty little passages, all alike.",
+        "exits": [
+          {
+            "verb": "NE",
+            "target": "MGRAT",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "MAZ10",
+            "condition": ""
+          },
+          {
+            "verb": "NW",
+            "target": "MAZ13",
+            "condition": ""
+          },
+          {
+            "verb": "SW",
+            "target": "MAZ12",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MGRAT": {
+        "name": "Grating Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "SW",
+            "target": "MAZ11",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "CLEAR",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MAZ12": {
+        "name": "Maze",
+        "desc": "This is part of a maze of twisty little passages, all alike.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "MAZE5",
+            "condition": ""
+          },
+          {
+            "verb": "SW",
+            "target": "MAZ11",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "MAZ13",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "MAZE9",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "DEAD4",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "DEAD4": {
+        "name": "Dead End",
+        "desc": "Dead End",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "MAZ12",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MAZ13": {
+        "name": "Maze",
+        "desc": "This is part of a maze of twisty little passages, all alike.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "MAZE9",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "MAZ12",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MAZ10",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "MAZ11",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MAZ14": {
+        "name": "Maze",
+        "desc": "This is part of a maze of twisty little passages, all alike.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "MAZ15",
+            "condition": ""
+          },
+          {
+            "verb": "NW",
+            "target": "MAZ14",
+            "condition": ""
+          },
+          {
+            "verb": "NE",
+            "target": "MAZE7",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MAZE7",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MAZ15": {
+        "name": "Maze",
+        "desc": "This is part of a maze of twisty little passages, all alike.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "MAZ14",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MAZE7",
+            "condition": ""
+          },
+          {
+            "verb": "NE",
+            "target": "CYCLO",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CYCLO": {
+        "name": "Cyclops Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "MAZ15",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "BLROO",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "TREAS",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "BLROO": {
+        "name": "Strange Passage",
+        "desc": "This is a long passage.  To the south is one entrance.  On the\r\neast there is an old wooden door, with a large hole in it (about\r\ncyclops sized).",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "CYCLO",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "LROOM",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "TREAS": {
+        "name": "Treasure Room",
+        "desc": "This is a large room, whose north wall is solid granite.  A number\r\nof discarded bags, which crumble at your touch, are scattered about\r\non the floor.  There is an exit down and what appears to be a newly\r\ncreated passage to the east.",
+        "exits": [
+          {
+            "verb": "DOWN",
+            "target": "CYCLO",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "CPANT",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "RAVI1": {
+        "name": "Deep Ravine",
+        "desc": "This is a deep ravine at a crossing with an east-west crawlway. \r\nSome stone steps are at the south of the ravine and a steep staircase\r\ndescends.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "PASS1",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "RESES",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "CHAS1",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "CRAW1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CRAW1": {
+        "name": "Rocky Crawl",
+        "desc": "This is a crawlway with a three-foot high ceiling.  Your footing\r\nis very unsure here due to the assortment of rocks underfoot. \r\nPassages can be seen in the east, west, and northwest corners of the\r\npassage.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "RAVI1",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "DOME",
+            "condition": ""
+          },
+          {
+            "verb": "NW",
+            "target": "EGYPT",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "RESES": {
+        "name": "Reservoir South",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "RAVI1",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "STREA",
+            "condition": ""
+          },
+          {
+            "verb": "CROSS",
+            "target": "RESER",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "RESER",
+            "condition": ""
+          },
+          {
+            "verb": "LAUNC",
+            "target": "RESER",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "CANY1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "RESER": {
+        "name": "Reservoir",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "RESEN",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "RESES",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "INSTR",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "LAND",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "RESEN": {
+        "name": "Reservoir North",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "ATLAN",
+            "condition": ""
+          },
+          {
+            "verb": "LAUNC",
+            "target": "RESER",
+            "condition": ""
+          },
+          {
+            "verb": "CROSS",
+            "target": "RESER",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "RESER",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "STREA": {
+        "name": "Stream View",
+        "desc": "You are standing on a path beside a gently flowing stream.  The path\r\ntravels to the north and the east.",
+        "exits": [
+          {
+            "verb": "LAUNC",
+            "target": "INSTR",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "RESES",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "ICY",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "INSTR": {
+        "name": "Stream",
+        "desc": "You are on the gently flowing stream.  The upstream route is too narrow\r\nto  navigate and the downstream route is invisible due to twisting\r\nwalls.  There is a narrow beach to land on.",
+        "exits": [
+          {
+            "verb": "UP",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "LAND",
+            "target": "STREA",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "RESER",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "EGYPT": {
+        "name": "Egyptian Room",
+        "desc": "This is a room which looks like an Egyptian tomb.  There is an\r\nascending staircase in the room as well as doors, east and south.",
+        "exits": [
+          {
+            "verb": "UP",
+            "target": "ICY",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "LEDG3",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "CRAW1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "ICY": {
+        "name": "Glacier Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "STREA",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "EGYPT",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "RUBYR",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "RUBYR": {
+        "name": "Ruby Room",
+        "desc": "This is a small chamber behind the remains of the Great Glacier.\r\nTo the south and west are small passageways.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "LAVA",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "ICY",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "ATLAN": {
+        "name": "Atlantis Room",
+        "desc": "This is an ancient room, long under water.  There are exits here\r\nto the southeast and upward.",
+        "exits": [
+          {
+            "verb": "SE",
+            "target": "RESEN",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "CAVE1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CANY1": {
+        "name": "Deep Canyon",
+        "desc": "You are on the south edge of a deep canyon.  Passages lead off\r\nto the east, south, and northwest.  You can hear the sound of\r\nflowing water below.",
+        "exits": [
+          {
+            "verb": "NW",
+            "target": "RESES",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "DAM",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "CAROU",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "ECHO": {
+        "name": "Loud Room",
+        "desc": "This is a large room with a ceiling which cannot be detected from\r\nthe ground. There is a narrow passage from east to west and a stone\r\nstairway leading upward.  The room is extremely noisy.  In fact, it is\r\ndifficult to hear yourself think.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "CHAS3",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "PASS5",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "CAVE3",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MIRR1": {
+        "name": "Mirror Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "PASS3",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "CRAW2",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "CAVE1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MIRR2": {
+        "name": "Mirror Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "PASS4",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "CRAW3",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "CAVE2",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CAVE1": {
+        "name": "Cave",
+        "desc": "This is a small cave with an entrance to the north and a stairway\r\nleading down.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "MIRR1",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "ATLAN",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CAVE2": {
+        "name": "Cave",
+        "desc": "This is a tiny cave with entrances west and north, and a dark,\r\nforbidding staircase leading down.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "CRAW3",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "MIRR2",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "LLD1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CRAW2": {
+        "name": "Steep Crawlway",
+        "desc": "This is a steep and narrow crawlway.  There are two exits nearby to\r\nthe south and southwest.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "MIRR1",
+            "condition": ""
+          },
+          {
+            "verb": "SW",
+            "target": "PASS3",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CRAW3": {
+        "name": "Narrow Crawlway",
+        "desc": "This is a narrow crawlway.  The crawlway leads from north to south.\r\nHowever the south passage divides to the south and southwest.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "CAVE2",
+            "condition": ""
+          },
+          {
+            "verb": "SW",
+            "target": "MIRR2",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "MGRAI",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "PASS3": {
+        "name": "Cold Passage",
+        "desc": "This is a cold and damp corridor where a long east-west passageway\r\nintersects with a northward path.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "MIRR1",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "SLIDE",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "CRAW2",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "PASS4": {
+        "name": "Winding Passage",
+        "desc": "This is a winding passage.  It seems that there is only an exit\r\non the east end although the whirring from the round room can be\r\nheard faintly to the north.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "MIRR2",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "ENTRA": {
+        "name": "Mine Entrance",
+        "desc": "You are standing at the entrance of what might have been a coal\r\nmine. To the northeast and the northwest are entrances to the mine,\r\nand there is another exit on the south end of the room.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "SLIDE",
+            "condition": ""
+          },
+          {
+            "verb": "NW",
+            "target": "SQUEE",
+            "condition": ""
+          },
+          {
+            "verb": "NE",
+            "target": "TSHAF",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "SQUEE": {
+        "name": "Squeaky Room",
+        "desc": "You are a small room.  Strange squeaky sounds may be heard coming from\r\nthe passage at the west end.  You may also escape to the south.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "BATS",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "ENTRA",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "TSHAF": {
+        "name": "Shaft Room",
+        "desc": "This is a large room, in the middle of which is a small shaft\r\ndescending through the floor into darkness below.  To the west and\r\nthe north are exits from this room.  Constructed over the top of the\r\nshaft is a metal framework to which a heavy iron chain is attached.",
+        "exits": [
+          {
+            "verb": "DOWN",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "ENTRA",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "TUNNE",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "TUNNE": {
+        "name": "Wooden Tunnel",
+        "desc": "This is a narrow tunnel with large wooden beams running across\r\nthe ceiling and around the walls.  A path from the south splits into\r\npaths running west and northeast.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "TSHAF",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "SMELL",
+            "condition": ""
+          },
+          {
+            "verb": "NE",
+            "target": "MINE1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "SMELL": {
+        "name": "Smelly Room",
+        "desc": "This is a small non-descript room.  However, from the direction\r\nof a small descending staircase a foul odor can be detected.  To the\r\neast is a narrow path.",
+        "exits": [
+          {
+            "verb": "DOWN",
+            "target": "BOOM",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "TUNNE",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "BOOM": {
+        "name": "Gas Room",
+        "desc": "This is a small room which smells strongly of coal gas.",
+        "exits": [
+          {
+            "verb": "UP",
+            "target": "SMELL",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "TLADD": {
+        "name": "Ladder Top",
+        "desc": "This is a very small room.  In the corner is a rickety wooden\r\nladder, leading downward.  It might be safe to descend.  There is\r\nalso a staircase leading upward.",
+        "exits": [
+          {
+            "verb": "DOWN",
+            "target": "BLADD",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "MINE7",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "BLADD": {
+        "name": "Ladder Bottom",
+        "desc": "This is a rather wide room.  On one side is the bottom of a\r\nnarrow wooden ladder.  To the northeast and the south are passages\r\nleaving the room.",
+        "exits": [
+          {
+            "verb": "NE",
+            "target": "DEAD7",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "TIMBE",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "TLADD",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "DEAD7": {
+        "name": "Dead End",
+        "desc": "Dead End",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "BLADD",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "TIMBE": {
+        "name": "Timber Room",
+        "desc": "This is a long and narrow passage, which is cluttered with broken\r\ntimbers.  A wide passage comes from the north and turns at the \r\nsouthwest corner of the room into a very narrow passageway.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "BLADD",
+            "condition": ""
+          },
+          {
+            "verb": "SW",
+            "target": "BSHAF",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "BSHAF": {
+        "name": "Lower Shaft",
+        "desc": "This is a small square room which is at the bottom of a long\r\nshaft. To the east is a passageway and to the northeast a very narrow\r\npassage. In the shaft can be seen a heavy iron chain.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "MACHI",
+            "condition": ""
+          },
+          {
+            "verb": "OUT",
+            "target": "TIMBE",
+            "condition": ""
+          },
+          {
+            "verb": "NE",
+            "target": "TIMBE",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MACHI": {
+        "name": "Machine Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "NW",
+            "target": "BSHAF",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "BATS": {
+        "name": "Bat Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "SQUEE",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MINE1": {
+        "name": "Coal mine",
+        "desc": "This is a non-descript part of a coal mine.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "MINE4",
+            "condition": ""
+          },
+          {
+            "verb": "SW",
+            "target": "MINE2",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "TUNNE",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MINE2": {
+        "name": "Coal mine",
+        "desc": "This is a non-descript part of a coal mine.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "MINE1",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "MINE5",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "MINE3",
+            "condition": ""
+          },
+          {
+            "verb": "NE",
+            "target": "MINE4",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MINE3": {
+        "name": "Coal mine",
+        "desc": "This is a non-descript part of a coal mine.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "MINE2",
+            "condition": ""
+          },
+          {
+            "verb": "NE",
+            "target": "MINE5",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "MINE5",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MINE4": {
+        "name": "Coal mine",
+        "desc": "This is a non-descript part of a coal mine.",
+        "exits": [
+          {
+            "verb": "UP",
+            "target": "MINE5",
+            "condition": ""
+          },
+          {
+            "verb": "NE",
+            "target": "MINE6",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MINE1",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "MINE2",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MINE5": {
+        "name": "Coal mine",
+        "desc": "This is a non-descript part of a coal mine.",
+        "exits": [
+          {
+            "verb": "DOWN",
+            "target": "MINE6",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "MINE7",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "MINE2",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MINE3",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "MINE3",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "MINE4",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MINE6": {
+        "name": "Coal mine",
+        "desc": "This is a non-descript part of a coal mine.",
+        "exits": [
+          {
+            "verb": "SE",
+            "target": "MINE4",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "MINE5",
+            "condition": ""
+          },
+          {
+            "verb": "NW",
+            "target": "MINE7",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MINE7": {
+        "name": "Coal mine",
+        "desc": "This is a non-descript part of a coal mine.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "MINE1",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "MINE5",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "TLADD",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MINE6",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "DOME": {
+        "name": "Dome Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "CRAW1",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "MTORC",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MTORC": {
+        "name": "Torch Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "UP",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "PRM",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "CRAW4",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CRAW4": {
+        "name": "North-South Crawlway",
+        "desc": "This is a north-south crawlway; a passage goes to the east also.\r\nThere is a hole above, but it provides no opportunities for climbing.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "CHAS2",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "STUDI",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "MTROL",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CHAS2": {
+        "name": "West of Chasm",
+        "desc": "You are on the west edge of a chasm, the bottom of which cannot be\r\nseen. The east side is sheer rock, providing no exits.  A narrow\r\npassage goes west, and the path you are on continues to the north and\r\nsouth.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "CELLA",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "CRAW4",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "GALLE",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "PASS1": {
+        "name": "East-West Passage",
+        "desc": "This is a narrow east-west passageway.  There is a narrow stairway\r\nleading down at the north end of the room.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "CAROU",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "MTROL",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "RAVI1",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "RAVI1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CAROU": {
+        "name": "Round room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "CAVE4",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "CAVE4",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "MGRAI",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "PASS1",
+            "condition": ""
+          },
+          {
+            "verb": "NW",
+            "target": "CANY1",
+            "condition": ""
+          },
+          {
+            "verb": "NE",
+            "target": "PASS5",
+            "condition": ""
+          },
+          {
+            "verb": "SE",
+            "target": "PASS4",
+            "condition": ""
+          },
+          {
+            "verb": "SW",
+            "target": "MAZE1",
+            "condition": ""
+          },
+          {
+            "verb": "EXIT",
+            "target": "PASS3",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "PASS5": {
+        "name": "North-South Passage",
+        "desc": "This is a high north-south passage, which forks to the northeast.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "CHAS1",
+            "condition": ""
+          },
+          {
+            "verb": "NE",
+            "target": "ECHO",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "CAROU",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CHAS1": {
+        "name": "Chasm",
+        "desc": "A chasm runs southwest to northeast.  You are on the south edge; the\r\npath exits to the south and to the east.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "RAVI1",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "PASS5",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CAVE3": {
+        "name": "Damp Cave",
+        "desc": "This is a cave.  Passages exit to the south and to the east, but\r\nthe cave narrows to a crack to the west.  The earth is particularly\r\ndamp here.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "ECHO",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "DAM",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CHAS3": {
+        "name": "Ancient Chasm",
+        "desc": "A chasm, evidently produced by an ancient river, runs through the\r\ncave here.  Passages lead off in all directions.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "ECHO",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "TCAVE",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "DEAD5",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "DEAD6",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "DEAD5": {
+        "name": "Dead End",
+        "desc": "Dead End",
+        "exits": [
+          {
+            "verb": "SW",
+            "target": "CHAS3",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "DEAD6": {
+        "name": "Dead End",
+        "desc": "Dead End",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "CHAS3",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CAVE4": {
+        "name": "Engravings Cave",
+        "desc": "You have entered a cave with passages leading north and southeast.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "CAROU",
+            "condition": ""
+          },
+          {
+            "verb": "SE",
+            "target": "RIDDL",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "RIDDL": {
+        "name": "Riddle Room",
+        "desc": "This is a room which is bare on all sides.  There is an exit down. \r\nTo the east is a great door made of stone.  Above the stone, the\r\nfollowing words are written: 'No man shall enter this room without\r\nsolving this riddle:\r\n\r\n  What is tall as a house,\r\n\t  round as a cup, \r\n\t  and all the king's horses can't draw it up?'\r\n\r\n(Reply via 'ANSWER 'answer'')",
+        "exits": [
+          {
+            "verb": "DOWN",
+            "target": "CAVE4",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "MPEAR",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MPEAR": {
+        "name": "Pearl Room",
+        "desc": "This is a former broom closet.  The exits are to the east and west.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "BWELL",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "RIDDL",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LLD1": {
+        "name": "Entrance to Hades",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "LLD2",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "CAVE2",
+            "condition": ""
+          },
+          {
+            "verb": "ENTER",
+            "target": "LLD2",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LLD2": {
+        "name": "Land of the Living Dead",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "TOMB",
+            "condition": ""
+          },
+          {
+            "verb": "EXIT",
+            "target": "LLD1",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "LLD1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MGRAI": {
+        "name": "Grail Room",
+        "desc": "You are standing in a small circular room with a pedestal.  A set of\r\nstairs leads up, and passages leave to the east and west.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "CAROU",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "CRAW3",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "TEMP1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "TEMP1": {
+        "name": "Temple",
+        "desc": "This is the west end of a large temple.  On the south wall is an \r\nancient inscription, probably a prayer in a long-forgotten language. \r\nThe north wall is solid granite.  The entrance at the west end of the\r\nroom is through huge marble pillars.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "MGRAI",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "TEMP2",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "TEMP2": {
+        "name": "Altar",
+        "desc": "This is the east end of a large temple.  In front of you is what\r\nappears to be an altar.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "TEMP1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "DAM": {
+        "name": "Dam",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "CANY1",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "DOCK",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "CAVE3",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "LOBBY",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LOBBY": {
+        "name": "Dam Lobby",
+        "desc": "This room appears to have been the waiting room for groups touring\r\nthe dam.  There are exits here to the north and east marked\r\n'Private', though the doors are open, and an exit to the south.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "DAM",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "MAINT",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "MAINT",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MAINT": {
+        "name": "Maintenance Room",
+        "desc": "This is what appears to have been the maintenance room for Flood\r\nControl Dam #3, judging by the assortment of tool chests around the\r\nroom.  Apparently, this room has been ransacked recently, for most of\r\nthe valuable equipment is gone. On the wall in front of you is a\r\ngroup of buttons, which are labelled in EBCDIC. However, they are of\r\ndifferent colors:  Blue, Yellow, Brown, and Red. The doors to this\r\nroom are in the west and south ends.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "LOBBY",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "LOBBY",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "DOCK": {
+        "name": "Dam Base",
+        "desc": "You are at the base of Flood Control Dam #3, which looms above you\r\nand to the north.  The river Frigid is flowing by here.  Across the\r\nriver are the White Cliffs which seem to form a giant wall stretching\r\nfrom north to south along the east shore of the river as it winds its\r\nway downstream.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "DAM",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "DAM",
+            "condition": ""
+          },
+          {
+            "verb": "LAUNC",
+            "target": "RIVR1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "RIVR1": {
+        "name": "Frigid River",
+        "desc": "You are on the River Frigid in the vicinity of the Dam.  The river\r\nflows quietly here.  There is a landing on the west shore.",
+        "exits": [
+          {
+            "verb": "UP",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "DOCK",
+            "condition": ""
+          },
+          {
+            "verb": "LAND",
+            "target": "DOCK",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "RIVR2",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "RIVR2": {
+        "name": "Frigid River",
+        "desc": "The River turns a corner here making it impossible to see the\r\nDam.  The White Cliffs loom on the east bank and large rocks prevent\r\nlanding on the west.",
+        "exits": [
+          {
+            "verb": "UP",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "RIVR3",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "RIVR3": {
+        "name": "Frigid River",
+        "desc": "The river descends here into a valley.  There is a narrow beach on\r\nthe east below the cliffs and there is some shore on the west which\r\nmay be suitable.  In the distance a faint rumbling can be heard.",
+        "exits": [
+          {
+            "verb": "UP",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "RIVR4",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "WCLF1",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "RCAVE",
+            "condition": ""
+          },
+          {
+            "verb": "LAND",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "WCLF1": {
+        "name": "White Cliffs Beach",
+        "desc": "You are on a narrow strip of beach which runs along the base of the\r\nWhite Cliffs. The only path here is a narrow one, heading south\r\nalong the Cliffs.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "WCLF2",
+            "condition": ""
+          },
+          {
+            "verb": "LAUNC",
+            "target": "RIVR3",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "WCLF2": {
+        "name": "White Cliffs Beach",
+        "desc": "You are on a rocky, narrow strip of beach beside the Cliffs.  A\r\nnarrow path leads north along the shore.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "WCLF1",
+            "condition": ""
+          },
+          {
+            "verb": "LAUNC",
+            "target": "RIVR4",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "RIVR4": {
+        "name": "Frigid River",
+        "desc": "The river is running faster here and the sound ahead appears to be\r\nthat of rushing water.  On the west shore is a sandy beach.  A small\r\narea of beach can also be seen below the Cliffs.",
+        "exits": [
+          {
+            "verb": "UP",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "RIVR5",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "WCLF2",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "BEACH",
+            "condition": ""
+          },
+          {
+            "verb": "LAND",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "RIVR5": {
+        "name": "Frigid River",
+        "desc": "The sound of rushing water is nearly unbearable here.  On the west\r\nshore is a large landing area.",
+        "exits": [
+          {
+            "verb": "UP",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "FCHMP",
+            "condition": ""
+          },
+          {
+            "verb": "LAND",
+            "target": "FANTE",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "FCHMP": {
+        "name": "Moby lossage",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "FANTE": {
+        "name": "Shore",
+        "desc": "You are on the shore of the River.  The river here seems somewhat\r\ntreacherous.  A path travels from north to south here, the south end\r\nquickly turning around a sharp corner.",
+        "exits": [
+          {
+            "verb": "LAUNC",
+            "target": "RIVR5",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "BEACH",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "FALLS",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "BEACH": {
+        "name": "Sandy Beach",
+        "desc": "You are on a large sandy beach at the shore of the river, which is\r\nflowing quickly by.  A path runs beside the river to the south here.",
+        "exits": [
+          {
+            "verb": "LAUNC",
+            "target": "RIVR4",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "FANTE",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "RCAVE": {
+        "name": "Rocky Shore",
+        "desc": "You are on the west shore of the river.  An entrance to a cave is\r\nto the northwest.  The shore is very rocky here.",
+        "exits": [
+          {
+            "verb": "LAUNC",
+            "target": "RIVR3",
+            "condition": ""
+          },
+          {
+            "verb": "NW",
+            "target": "TCAVE",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "TCAVE": {
+        "name": "Small Cave",
+        "desc": "This is a small cave whose exits are on the south and northwest.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "RCAVE",
+            "condition": ""
+          },
+          {
+            "verb": "NW",
+            "target": "CHAS3",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "FALLS": {
+        "name": "Aragain Falls",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "RAINB",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "FANTE",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "RAINB",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "RAINB": {
+        "name": "Rainbow Room",
+        "desc": "You are on top of a rainbow (I bet you never thought you would walk\r\non a rainbow), with a magnificent view of the Falls.  The rainbow\r\ntravels east-west here.  There is an NBC Commissary here.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "POG",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "FALLS",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "POG": {
+        "name": "End of Rainbow",
+        "desc": "You are on a small, rocky beach on the continuation of the Frigid\r\nRiver past the Falls.  The beach is narrow due to the presence of the\r\nWhite Cliffs.  The river canyon opens here and sunlight shines in\r\nfrom above. A rainbow crosses over the falls to the west and a narrow\r\npath continues to the southeast.",
+        "exits": [
+          {
+            "verb": "UP",
+            "target": "RAINB",
+            "condition": ""
+          },
+          {
+            "verb": "NW",
+            "target": "RAINB",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "RAINB",
+            "condition": ""
+          },
+          {
+            "verb": "SE",
+            "target": "CLBOT",
+            "condition": ""
+          },
+          {
+            "verb": "LAUNC",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CLBOT": {
+        "name": "Canyon Bottom",
+        "desc": "You are beneath the walls of the river canyon which may be climbable\r\nhere.  There is a small stream here, which is the lesser part of the\r\nrunoff of Aragain Falls. To the north is a narrow path.",
+        "exits": [
+          {
+            "verb": "UP",
+            "target": "CLMID",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "POG",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CLMID": {
+        "name": "Rocky Ledge",
+        "desc": "You are on a ledge about halfway up the wall of the river canyon.\r\nYou can see from here that the main flow from Aragain Falls twists\r\nalong a passage which it is impossible to enter.  Below you is the\r\ncanyon bottom.  Above you is more cliff, which still appears\r\nclimbable.",
+        "exits": [
+          {
+            "verb": "UP",
+            "target": "CLTOP",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "CLBOT",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CLTOP": {
+        "name": "Canyon View",
+        "desc": "You are at the top of the Great Canyon on its south wall.  From here\r\nthere is a marvelous view of the Canyon and parts of the Frigid River\r\nupstream.  Across the canyon, the walls of the White Cliffs still\r\nappear to loom far above.  Following the Canyon upstream (north and\r\nnorthwest), Aragain Falls may be seen, complete with rainbow. \r\nFortunately, my vision is better than average and I can discern the\r\ntop of the Flood Control Dam #3 far to the distant north.  To the\r\nwest and south can be seen an immense forest, stretching for miles\r\naround.  It is possible to climb down into the canyon from here.",
+        "exits": [
+          {
+            "verb": "DOWN",
+            "target": "CLMID",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "FORE4",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "FORE5",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "VLBOT": {
+        "name": "Volcano Bottom",
+        "desc": "You are at the bottom of a large dormant volcano.  High above you\r\nlight may be seen entering from the cone of the volcano.  The only\r\nexit here is to the north.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "LAVA",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "VAIR1": {
+        "name": "Volcano Core",
+        "desc": "You are about one hundred feet above the bottom of the volcano.  The\r\ntop of the volcano is clearly visible here.",
+        "exits": [
+          {
+            "verb": "#!#!#",
+            "target": "!",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "VAIR2": {
+        "name": "Volcano near small ledge",
+        "desc": "You are about two hundred feet above the volcano floor.  Looming\r\nabove is the rim of the volcano.  There is a small ledge on the west\r\nside.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "LEDG2",
+            "condition": ""
+          },
+          {
+            "verb": "LAND",
+            "target": "LEDG2",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "VAIR3": {
+        "name": "Volcano near viewing ledge",
+        "desc": "You are high above the floor of the volcano.  From here the rim of\r\nthe volcano looks very narrow and you are very near it.  To the \r\neast is what appears to be a viewing ledge, too thin to land on.",
+        "exits": [],
+        "inventory": []
+      },
+      "VAIR4": {
+        "name": "Volcano near wide ledge",
+        "desc": "You are near the rim of the volcano which is only about 15 feet\r\nacross.  To the west, there is a place to land on a wide ledge.",
+        "exits": [
+          {
+            "verb": "LAND",
+            "target": "LEDG4",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "LEDG4",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LEDG2": {
+        "name": "Narrow Ledge",
+        "desc": "You are on a narrow ledge overlooking the inside of an old dormant\r\nvolcano.  This ledge appears to be about in the middle between the\r\nfloor below and the rim above. There is an exit here to the south.",
+        "exits": [
+          {
+            "verb": "DOWN",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "LAUNC",
+            "target": "VAIR2",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "VLBOT",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "LIBRA",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LIBRA": {
+        "name": "Library",
+        "desc": "This is a room which must have been a large library, probably\r\nfor the royal family.  All of the shelves appear to have been gnawed\r\nto pieces by unfriendly gnomes.  To the north is an exit.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "LEDG2",
+            "condition": ""
+          },
+          {
+            "verb": "OUT",
+            "target": "LEDG2",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LEDG3": {
+        "name": "Volcano View",
+        "desc": "You are on a ledge in the middle of a large volcano.  Below you\r\nthe volcano bottom can be seen and above is the rim of the volcano.\r\nA couple of ledges can be seen on the other side of the volcano;\r\nit appears that this ledge is intermediate in elevation between\r\nthose on the other side.  The exit from this room is to the east.",
+        "exits": [
+          {
+            "verb": "DOWN",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "CROSS",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "EGYPT",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LEDG4": {
+        "name": "Wide Ledge",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "DOWN",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "LAUNC",
+            "target": "VAIR4",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "VLBOT",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "SAFE",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "SAFE": {
+        "name": "Dusty Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "LEDG4",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LAVA": {
+        "name": "Lava Room",
+        "desc": "This is a small room, whose walls are formed by an old lava flow.\r\nThere are exits here to the west and the south.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "VLBOT",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "RUBYR",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MAGNE": {
+        "name": "Low Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "CMACH",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "CMACH",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "CMACH",
+            "condition": ""
+          },
+          {
+            "verb": "NE",
+            "target": "CMACH",
+            "condition": ""
+          },
+          {
+            "verb": "NW",
+            "target": "ALICE",
+            "condition": ""
+          },
+          {
+            "verb": "SW",
+            "target": "ALICE",
+            "condition": ""
+          },
+          {
+            "verb": "SE",
+            "target": "ALICE",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "CMACH",
+            "condition": ""
+          },
+          {
+            "verb": "OUT",
+            "target": "ALICE",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CMACH": {
+        "name": "Machine Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "MAGNE",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "CAGER",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CAGER": {
+        "name": "Dingy Closet",
+        "desc": "This is a dingy closet adjacent to the machine room.  On one wall\r\nis a small sticker which says\r\n\t\tProtected by\r\n\t\t  FROBOZZ\r\n\t     Magic Alarm Company\r\n\t      (Hello, footpad!)\r\n",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "CMACH",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CAGED": {
+        "name": "Cage",
+        "desc": "You are trapped inside a steel cage.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "TWELL": {
+        "name": "Top of Well",
+        "desc": "You are at the top of the well.  Well done.  There are etchings on\r\nthe side of the well. There is a small crack across the floor at the\r\nentrance to a room on the east, but it can be crossed easily.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "ALICE",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "BWELL": {
+        "name": "Circular Room",
+        "desc": "This is a damp circular room, whose walls are made of brick and\r\nmortar.  The roof of this room is not visible, but there appear to be\r\nsome etchings on the walls.  There is a passageway to the west.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "MPEAR",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "ALICE": {
+        "name": "Tea Room",
+        "desc": "This is a small square room, in the center of which is a large\r\noblong table, no doubt set for afternoon tea.  It is clear from the\r\nobjects on the table that the users were indeed mad.  In the eastern\r\ncorner of the room is a small hole (no more than four inches high). \r\nThere are passageways leading away to the west and the northwest.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "TWELL",
+            "condition": ""
+          },
+          {
+            "verb": "NW",
+            "target": "MAGNE",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "ALISM": {
+        "name": "Posts Room",
+        "desc": "This is an enormous room, in the center of which are four wooden\r\nposts delineating a rectangular area, above which is what appears to\r\nbe a wooden roof.  In fact, all objects in this room appear to be\r\nabnormally large. To the east is a passageway.  There is a large\r\nchasm on the west and the northwest.",
+        "exits": [
+          {
+            "verb": "NW",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "ALITR",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "ALITR": {
+        "name": "Pool Room",
+        "desc": "This is a large room, one half of which is depressed.  There is a\r\nlarge leak in the ceiling through which brown colored goop is\r\nfalling.  The only exit to this room is to the west.",
+        "exits": [
+          {
+            "verb": "EXIT",
+            "target": "ALISM",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "ALISM",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "BKENT": {
+        "name": "Bank Entrance",
+        "desc": "This is the large entrance hall of the Bank of Zork, the largest\r\nbanking institution of the Great Underground Empire. A partial\r\naccount of its history is in 'The Lives of the Twelve Flatheads' with\r\nthe chapter on J. Pierpont Flathead.  A more detailed history (albeit\r\nless objective) may be found in Flathead's outrageous autobiography\r\n'I'm Rich and You Aren't - So There!'.\r\nMost of the furniture has been ravaged by passing scavengers.  All\r\nthat remains are two signs at the Northwest and Northeast corners of\r\nthe room, which say\r\n  \r\n      <--  WEST VIEWING ROOM        EAST VIEWING ROOM  -->  \r\n",
+        "exits": [
+          {
+            "verb": "NW",
+            "target": "BKTW",
+            "condition": ""
+          },
+          {
+            "verb": "NE",
+            "target": "BKTE",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "GALLE",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "BKTW": {
+        "name": "West Teller's Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "BKVW",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "BKENT",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "BKBOX",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "BKTE": {
+        "name": "East Teller's Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "BKVE",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "BKENT",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "BKBOX",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "BKVW": {
+        "name": "Viewing Room",
+        "desc": "This is a room used by holders of safety deposit boxes to view\r\ntheir contents.  On the north side of the room is a sign which says \r\n\t\r\n   REMAIN HERE WHILE THE BANK OFFICER RETRIEVES YOUR DEPOSIT BOX\r\n    WHEN YOU ARE FINISHED, LEAVE THE BOX, AND EXIT TO THE SOUTH  \r\n     AN ADVANCED PROTECTIVE DEVICE PREVENTS ALL CUSTOMERS FROM\r\n      REMOVING ANY SAFETY DEPOSIT BOX FROM THIS VIEWING AREA!\r\n               Thank You for banking at the Zork!\r\n",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "BKENT",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "BKVE": {
+        "name": "Viewing Room",
+        "desc": "This is a room used by holders of safety deposit boxes to view\r\ntheir contents.  On the north side of the room is a sign which says \r\n\t\r\n   REMAIN HERE WHILE THE BANK OFFICER RETRIEVES YOUR DEPOSIT BOX\r\n    WHEN YOU ARE FINISHED, LEAVE THE BOX, AND EXIT TO THE SOUTH  \r\n     AN ADVANCED PROTECTIVE DEVICE PREVENTS ALL CUSTOMERS FROM\r\n      REMOVING ANY SAFETY DEPOSIT BOX FROM THIS VIEWING AREA!\r\n               Thank You for banking at the Zork!\r\n",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "BKENT",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "BKTWI": {
+        "name": "Small Room",
+        "desc": "This is a small, bare room with no distinguishing features. There\r\nare no exits from this room.",
+        "exits": [],
+        "inventory": []
+      },
+      "BKVAU": {
+        "name": "Vault",
+        "desc": "This is the Vault of the Bank of Zork, in which there are no doors.",
+        "exits": [],
+        "inventory": []
+      },
+      "BKBOX": {
+        "name": "Safety Depository",
+        "desc": "This is a large rectangular room.  The east and west walls here\r\nwere used for storing safety deposit boxes.  As might be expected,\r\nall have been carefully removed by evil persons.  To the east, west,\r\nand south of the room are large doorways. The northern 'wall'\r\nof the room is a shimmering curtain of light.  In the center of the\r\nroom is a large stone cube, about 10 feet on a side.  Engraved on \r\nthe side of the cube is some lettering.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "BKTW",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "BKTE",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "BKEXE",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "BKEXE": {
+        "name": "Chairman's Office",
+        "desc": "This room was the office of the Chairman of the Bank of Zork.\r\nLike the other rooms here, it has been extensively vandalized.\r\nThe lone exit is to the north.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "BKBOX",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CPANT": {
+        "name": "Small Square Room",
+        "desc": "This is a small square room, in the middle of which is a recently \r\ncreated hole through which you can barely discern the floor some ten\r\nfeet below.  It doesn't seem likely you could climb back up.  There\r\nare exits to the west and south.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "CPOUT",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "TREAS",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "FCHMP",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CPOUT": {
+        "name": "Side Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "CPANT",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "CP",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CP": {
+        "name": "Room in a Puzzle",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "FCHMP",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "FCHMP",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "FCHMP",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "FCHMP",
+            "condition": ""
+          },
+          {
+            "verb": "NE",
+            "target": "FCHMP",
+            "condition": ""
+          },
+          {
+            "verb": "NW",
+            "target": "FCHMP",
+            "condition": ""
+          },
+          {
+            "verb": "SE",
+            "target": "FCHMP",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "FCHMP",
+            "condition": ""
+          },
+          {
+            "verb": "SW",
+            "target": "FCHMP",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "PALAN": {
+        "name": "Dreary Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "PRM",
+            "condition": ""
+          },
+          {
+            "verb": "EXIT",
+            "target": "PRM",
+            "condition": ""
+          },
+          {
+            "verb": "#!#!#",
+            "target": "PRM",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "PRM": {
+        "name": "Tiny Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "PALAN",
+            "condition": ""
+          },
+          {
+            "verb": "ENTER",
+            "target": "PALAN",
+            "condition": ""
+          },
+          {
+            "verb": "#!#!#",
+            "target": "PALAN",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "MTORC",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "SLIDE": {
+        "name": "Slide Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "PASS3",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "ENTRA",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "CAVE4",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "SLID1": {
+        "name": "Slide",
+        "desc": "This is an uncomfortable spot within the coal chute.  The rope to\r\nwhich you are clinging can be seen rising into the darkness above.\r\nThere is more rope dangling below you.",
+        "exits": [
+          {
+            "verb": "DOWN",
+            "target": "SLID2",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "SLIDE",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "SLID2": {
+        "name": "Slide",
+        "desc": "This is another spot within the coal chute.  Above you the rope\r\nclimbs into darkness and the end of the rope is dangling five feet\r\nbeneath you.",
+        "exits": [
+          {
+            "verb": "DOWN",
+            "target": "SLID3",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "SLID1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "SLID3": {
+        "name": "Slide",
+        "desc": "You have reached the end of your rope.  Below you is darkness as\r\nthe chute makes a sharp turn.  On the east here is a small ledge\r\nwhich you might be able to stand on.",
+        "exits": [
+          {
+            "verb": "DOWN",
+            "target": "CELLA",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "SLID2",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "SLEDG",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "SLEDG": {
+        "name": "Slide Ledge",
+        "desc": "This is a narrow ledge abutting the coal chute, in which a rope can\r\nbe seen passing downward.  Behind you, to the south, is a small room.",
+        "exits": [
+          {
+            "verb": "DOWN",
+            "target": "CELLA",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "SLID2",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "SPAL",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "SPAL": {
+        "name": "Sooty Room",
+        "desc": "This is a small room with rough walls, and a ceiling which is steeply\r\nsloping from north to south. There is coal dust covering almost\r\neverything, and little bits of coal are scattered around the only exit\r\n(which is a narrow passage to the north). In one corner of the room is\r\nan old coal stove which lights the room with a cheery red glow.  There\r\nis a very narrow crack in the north wall.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "SLEDG",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MRD": {
+        "name": "Hallway",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "FDOOR",
+            "condition": ""
+          },
+          {
+            "verb": "NE",
+            "target": "FDOOR",
+            "condition": ""
+          },
+          {
+            "verb": "NW",
+            "target": "FDOOR",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MRG",
+            "condition": ""
+          },
+          {
+            "verb": "SE",
+            "target": "MRG",
+            "condition": ""
+          },
+          {
+            "verb": "SW",
+            "target": "MRG",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MRG": {
+        "name": "Hallway",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "MRD",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MRC",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MRC": {
+        "name": "Hallway",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "MRG",
+            "condition": ""
+          },
+          {
+            "verb": "NW",
+            "target": "MRG",
+            "condition": ""
+          },
+          {
+            "verb": "NE",
+            "target": "MRG",
+            "condition": ""
+          },
+          {
+            "verb": "ENTER",
+            "target": "INMIR",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MRB",
+            "condition": ""
+          },
+          {
+            "verb": "SW",
+            "target": "MRB",
+            "condition": ""
+          },
+          {
+            "verb": "SE",
+            "target": "MRB",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MRB": {
+        "name": "Hallway",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "MRC",
+            "condition": ""
+          },
+          {
+            "verb": "NW",
+            "target": "MRC",
+            "condition": ""
+          },
+          {
+            "verb": "NE",
+            "target": "MRC",
+            "condition": ""
+          },
+          {
+            "verb": "ENTER",
+            "target": "INMIR",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MRA",
+            "condition": ""
+          },
+          {
+            "verb": "SW",
+            "target": "MRA",
+            "condition": ""
+          },
+          {
+            "verb": "SE",
+            "target": "MRA",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MRA": {
+        "name": "Hallway",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "MRB",
+            "condition": ""
+          },
+          {
+            "verb": "NW",
+            "target": "MRB",
+            "condition": ""
+          },
+          {
+            "verb": "NE",
+            "target": "MRB",
+            "condition": ""
+          },
+          {
+            "verb": "ENTER",
+            "target": "INMIR",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MREYE",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MRDE": {
+        "name": "Narrow Room",
+        "desc": "",
+        "exits": [],
+        "inventory": []
+      },
+      "MRDW": {
+        "name": "Narrow Room",
+        "desc": "",
+        "exits": [],
+        "inventory": []
+      },
+      "MRGE": {
+        "name": "Narrow Room",
+        "desc": "",
+        "exits": [],
+        "inventory": []
+      },
+      "MRGW": {
+        "name": "Narrow Room",
+        "desc": "",
+        "exits": [],
+        "inventory": []
+      },
+      "MRCE": {
+        "name": "Narrow Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "ENTER",
+            "target": "INMIR",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "INMIR",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "MRG",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MRB",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MRCW": {
+        "name": "Narrow Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "ENTER",
+            "target": "INMIR",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "INMIR",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "MRG",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MRB",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MRBE": {
+        "name": "Narrow Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "ENTER",
+            "target": "INMIR",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "INMIR",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "MRC",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MRA",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MRBW": {
+        "name": "Narrow Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "ENTER",
+            "target": "INMIR",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "INMIR",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "MRC",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MRA",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MRAE": {
+        "name": "Narrow Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "ENTER",
+            "target": "INMIR",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "INMIR",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "MRB",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MREYE",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MRAW": {
+        "name": "Narrow Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "ENTER",
+            "target": "INMIR",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "INMIR",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "MRB",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MREYE",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "INMIR": {
+        "name": "Inside Mirror",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "MRA",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MRA",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "MRA",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "MRA",
+            "condition": ""
+          },
+          {
+            "verb": "NE",
+            "target": "MRA",
+            "condition": ""
+          },
+          {
+            "verb": "NW",
+            "target": "MRA",
+            "condition": ""
+          },
+          {
+            "verb": "SE",
+            "target": "MRA",
+            "condition": ""
+          },
+          {
+            "verb": "SW",
+            "target": "MRA",
+            "condition": ""
+          },
+          {
+            "verb": "EXIT",
+            "target": "MRA",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MRANT": {
+        "name": "Stone Room",
+        "desc": "You are standing near one end of a long, dimly lit hall.  At the\r\nsouth stone stairs ascend.  To the north the corridor is illuminated\r\nby torches set high in the walls, out of reach.  On one wall is a red\r\nbutton.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "TSTRS",
+            "condition": ""
+          },
+          {
+            "verb": "UP",
+            "target": "TSTRS",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "MREYE",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MREYE": {
+        "name": "Small Room",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "MRA",
+            "condition": ""
+          },
+          {
+            "verb": "NW",
+            "target": "MRA",
+            "condition": ""
+          },
+          {
+            "verb": "NE",
+            "target": "MRA",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MRANT",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "TOMB": {
+        "name": "Tomb of the Unknown Implementer",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "LLD2",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "CRYPT",
+            "condition": ""
+          },
+          {
+            "verb": "ENTER",
+            "target": "CRYPT",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CRYPT": {
+        "name": "Crypt",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "TOMB",
+            "condition": ""
+          },
+          {
+            "verb": "LEAVE",
+            "target": "TOMB",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "TSTRS": {
+        "name": "Top of Stairs",
+        "desc": "You are standing at the top of a flight of stairs that lead down to\r\na passage below.  Dim light, as from torches, can be seen in the\r\npassage.  Behind you the stairs lead into untouched rock.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "MRANT",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "MRANT",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "ECORR": {
+        "name": "East Corridor",
+        "desc": "This is a corridor with polished marble walls.  The corridor\r\nwidens into larger areas as it turns west at its northern and\r\nsouthern ends.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "NCORR",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "SCORR",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "WCORR": {
+        "name": "West Corridor",
+        "desc": "This is a corridor with polished marble walls.  The corridor\r\nwidens into larger areas as it turns east at its northern and\r\nsouthern ends.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "NCORR",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "SCORR",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "SCORR": {
+        "name": "South Corridor",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "WCORR",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "ECORR",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "CELL",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "BDOOR",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "BDOOR": {
+        "name": "Narrow Corridor",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "SCORR",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "FDOOR",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "FDOOR": {
+        "name": "Dungeon Entrance",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "BDOOR",
+            "condition": ""
+          },
+          {
+            "verb": "ENTER",
+            "target": "BDOOR",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MRD",
+            "condition": ""
+          },
+          {
+            "verb": "SE",
+            "target": "MRD",
+            "condition": ""
+          },
+          {
+            "verb": "SW",
+            "target": "MRD",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "NCORR": {
+        "name": "North Corridor",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "ECORR",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "WCORR",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "PARAP",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "CELL",
+            "condition": ""
+          },
+          {
+            "verb": "ENTER",
+            "target": "CELL",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "PARAP": {
+        "name": "Parapet",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "NCORR",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CELL": {
+        "name": "Prison Cell",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "EXIT",
+            "target": "NCORR",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "NCORR",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "SCORR",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "PCELL": {
+        "name": "Prison Cell",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "EXIT",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "NCELL": {
+        "name": "Prison Cell",
+        "desc": "",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "EXIT",
+            "target": "NIRVA",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "NIRVA",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "NIRVA": {
+        "name": "Treasury of Zork",
+        "desc": "     This is a room of large size, richly appointed and decorated\r\nin a style that bespeaks exquisite taste.  To judge from its\r\ncontents, it is the ultimate storehouse of the treasures of Zork.\r\n     There are chests here containing precious jewels, mountains of\r\nzorkmids, rare paintings, ancient statuary, and beguiling curios.\r\n     In one corner of the room is a bookcase boasting such volumes as\r\n'The History of the Great Underground Empire,' 'The Lives of the\r\nTwelve Flatheads,' 'The Wisdom of the Implementors,' and other\r\ninformative and inspiring works.\r\n     On one wall is a completely annotated map of the Great Underground\r\nEmpire, showing points of interest, various troves of treasure, and\r\nindicating the locations of several superior scenic views.\r\n     On a desk at the far end of the room may be found stock\r\ncertificates representing a controlling interest in FrobozzCo\r\nInternational, the multinational conglomerate and parent company of\r\nthe Frobozz Magic Boat Co., etc.",
+        "exits": [],
+        "inventory": []
+      }
+    }
+  }

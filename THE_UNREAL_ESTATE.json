@@ -1,0 +1,740 @@
+{
+    "verbs": [
+      {
+        "v": "EXITS",
+        "map": "EXITS"
+      },
+      {
+        "v": "QUIT",
+        "map": "QUIT"
+      },
+      {
+        "v": "Q",
+        "map": "QUIT"
+      },
+      {
+        "v": "GET ME OUT OF HERE!",
+        "map": "QUIT"
+      },
+      {
+        "v": "NORTH",
+        "map": "NORTH"
+      },
+      {
+        "v": "N",
+        "map": "NORTH"
+      },
+      {
+        "v": "SOUTH",
+        "map": "SOUTH"
+      },
+      {
+        "v": "S",
+        "map": "SOUTH"
+      },
+      {
+        "v": "EAST",
+        "map": "EAST"
+      },
+      {
+        "v": "E",
+        "map": "EAST"
+      },
+      {
+        "v": "WEST",
+        "map": "WEST"
+      },
+      {
+        "v": "W",
+        "map": "WEST"
+      },
+      {
+        "v": "UP",
+        "map": "UP"
+      },
+      {
+        "v": "U",
+        "map": "UP"
+      },
+      {
+        "v": "DOWN",
+        "map": "DOWN"
+      },
+      {
+        "v": "D",
+        "map": "DOWN"
+      },
+      {
+        "v": "ENTER",
+        "map": "ENTER"
+      },
+      {
+        "v": "OUT",
+        "map": "OUT"
+      },
+      {
+        "v": "EXIT",
+        "map": "EXIT"
+      },
+      {
+        "v": "LEAVE",
+        "map": "LEAVE"
+      }
+    ],
+    "rooms": {
+      "INTRO": {
+        "name": "Foyer",
+        "desc": "You are standing in front of a locked door in the foyer of a home.\nThe mat beneath your feet displays WELCOME, but you feel anything but.\nTo the NORTH is a plain wooden staircase missing some steps.\nExits to the EAST and WEST lead to other parts of the house.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "LAND1",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "INTRO",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "KITCH",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "LIVRM",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "START": {
+        "name": "_______________THE______________________________\nUU  UU NNN   NN _ RRRRR  EEEEEE     A     LL    \nUU  UU NN N  NN| |RR  RR EE        AAA    LL    \nUU  UU NN  N NN| |RRRR   EEEEE    AA AA   LL    \nUU  UU NN   NNN| |RR  RR EE      AAAAAAA  LL    \nUUUUUU NN    NN| |RR  RR EEEEEE AA     AA LLLLLL\n               | |                              \nEEEEEE  SSSSS__| |__   A  TTTTTTTT EEEEEE       \nEE     SS   |__   __| AAA    TT    EE           \nEEEEE   SSSS   | |   AA AA   TT    EEEEE        \nEE         SS  | |  AAAAAAA  TT    EE           \nEEEEEE SSSSS   |_| AA     AA TT    EEEEEE       \n________________________________________________\n____a text-adventure horror game of sorts by____\nChristopher Butcher - MSCH-C220-13370 - IU, FA19\n",
+        "desc": "\nYou hear the click of the door shutting behind you. You are standing in the entryway of a building... a home, even.\nTo the NORTH is a plain wooden staircase missing some steps.\nExits to the EAST and WEST lead to other parts of the house. ",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "KITCH",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "LIVRM",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "LAND1",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "INTRO",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+            "KITCH": {
+        "name": "Kitchen",
+        "desc": "As you enter, your nose is filled with the smell of mildew.\nThe kitchen is dilapidated, with bits of the walls torn out and sprawled across the ground.\nThe sink sits on the ground, with its connective tissue still attached to the western wall.\nTo the NORTH you can see through an open doorway a dining room, to the EAST is the foyer where you began.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "KITCH",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "INTRO",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "DINER",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "KITCH",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "DINER": {
+        "name": "Dining room",
+        "desc": "Through the open doorway sits a long wooden table with six carved chairs.\nIn the center of the table is a small ornamental pumpkin.\nOn the long wall behind the table hangs a painting. While it is not of anything specific, it makes you feel uneasy.\nIn the corner of the room is a small plastic trashcan.\nYou look inside and see a grisly scene, as bones and meat line a large black trashbag encircled with flies. \nThe smell is that of a feast, but what you see is carnage. Was this created by a human? Or some sort of beast with two mouths...\nThe only visible exit is to the SOUTH, back into the kitchen.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "DINER",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "DINER",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "KITCH",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "DINER",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LIVRM": {
+        "name": "Living room",
+        "desc": "You enter the living room of this house. However, there does not appear to be any sort of living here. All of the furniture is covered in plastic, which in turn is covered in a thin layer of dust.\nLarge spaces where paintings used to hang line the walls, with an empty bookcase partially torn from the wall.\nThe windows out towards the south are covered by more plastic tarps.\nTo the NORTH is a short hallway and to the WEST is the foyer where this nightmare began.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "HALL1",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "LIVRM",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "LIVRM",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "INTRO",
+            "condition": ""
+          },
+          {
+            "verb": "ENTER",
+            "target": "HALL1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "HALL1": {
+        "name": "Hallway",
+        "desc": "A short hallway sits mostly intact to the north of the living room.\nClosed doors exist to the NORTH and WEST.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "HALL1",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "BASEM",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "HALFB",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "LIVRM",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "HALFB": {
+        "name": "Half bathroom",
+        "desc": "As you open the bathroom door, your senses are assaulted by the smell of stagnant water and some sort of strong-smelling chemical.\nThe bathtub is lined with a blue tarp, but the walls and tarp are splattered in red.\nThe sink is mostly on the wall, but one corner sits covered in this red substance, chipped off and sitting on the linoleum.\nA large circular saw sits on the seat of the toilet, still plugged in.\nThe only exit is back to the hallway to the SOUTH.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "HALFB",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "HALFB",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "HALFB",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "HALL1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "BASEM": {
+        "name": "Basement",
+        "desc": "You stumble down a dim set of stairs.\nAs you reach the bottom step, your eyes begin to adjust to the darkness.\nScrawled onto the foundation of this home is some sort of arcane language that you cannot read.\nAs you stare into the concrete, you feel as though you are going mad.\nWhat type of horrid rituals did they do down here? Better yet, are they finished?\nYou think you should go back EAST up the stairs as fast as you can...",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "HALL1",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "BASE2",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "BASE2",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "BASE2",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "BASE2": {
+        "name": "Basement????",
+        "desc": "The light flickers out and you hear a rattle in the walls. It is so dark in here, and you're no longer sure if you are alone...",
+        "exits": [
+          {
+            "verb": "UP",
+            "target": "HALL1",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "BASE2",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "HALL1",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "BASE2",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "BASE2",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LAND1": { 
+        "name": "2nd floor landing",
+        "desc": "At the top of a steep flight of steps you see closed doors to the EAST and WEST. \nTo the NORTH lies a hallway leading to more rooms.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "INTRO",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "HALL2",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "OFFICE",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "GBED1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "GBED1": {
+        "name": "Guest bedroom",
+        "desc": "The first thing you see upon entering this room is a king sized bed, perfectly kept, in the center of the room.\nIn the southwest corner of the room, a single professional-grade film camera sits on a tripod, pointed directly at you.\nOther than these two things (and the door out to the EAST) there is nothing else in this room.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "GBED1",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "LAND1",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "GBED1",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "GBED1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "OFFICE": {
+        "name": "Cluttered office.",
+        "desc": "The large mahogany desk in this room is the only indication that this is an office,\n as the rest of the room is packed to the brim with boxes.\nYou pull a piece of paper out at random, and reveal a crude drawing of someone.\nYou believe you know this person, but are unsure where from... \nThe large X drawn over their face makes their identification even harder.\nYou can leave to the WEST, back onto the landing.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "LAND1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "HALL2": {
+        "name": "Upstairs hallway",
+        "desc": "As you approach the door at the NORTH end of this hallway, your hands begin to shake.\nYour feet feel as heavy as tombstones.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "HALL2",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "MBR1",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "LAND1",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "HALL2",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MBR1": {
+        "name": "The master bedroom",
+        "desc": "This room does not appear to be lived-in. The bed, the wallpaper, the furniture...\n it all seems brand new./nYou feel a sense of calm for the first time today.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "MBR1",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "MBRX",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "MBATH1",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "MBR1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MBRX": {
+        "name": "The master bedroom",
+        "desc": "You begin to leave the bedroom, but then think better of it.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "MBATH1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MBATH1": {
+        "name": "The master bathroom",
+        "desc": "This room practically sparkles in comparison to the rest of the home.\nAs you take stock of your surroundings, you catch a glimpse of yourself in the bathroom mirror.\nHow long has it been since you've seen your own reflection?\nThe face looking back at you feels more like a stranger...\nYou look towards the exit to the WEST.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "MBR2",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MBR2": { 
+        "name": "The master bedroom",
+        "desc": "As you reemerge from the bathroom, you catch sight of a picture frame on the nightstand.\nYou recognize a familiar face in it.\nAs you reach for the picture, you hear an odd creak followed by a light thud from the hallway to the SOUTH...",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "MBR2A",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "MBAT2A",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "MBR2A",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "HALL2B",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MBR2A": {
+        "name": "The master bedroom",
+        "desc": "You look from the door to the nightstand, but it appears to have fallen behind the bed. You wonder what the sound to the SOUTH was...",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "MBAT2A",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "HALL2B",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MBAT2A": {
+        "name": "The master bathroom",
+        "desc": "You attempt to walk back into the bathroom, but the sound from the SOUTH takes up your entire attention.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "HALL2B",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "HALL2B": {
+        "name": "Upstairs hallway",
+        "desc": "As you exit the bedroom, you see that a small retractable ladder has been released from the ceiling, revealing an entry to the attic to the SOUTH.\nBits of dust wave in the hot, stale air coming from the opening.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "HALL2B",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "MBR2B",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "ATTIC",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "HALL2B",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "MBR2B": {
+        "name": "Master bedroom",
+        "desc": "There's nothing for you in the master bedroom anymore. \nThe only way to leave this nightmare is to the SOUTH, up the ladder to the attic.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "ATTIC",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "ATTIC": {
+        "name": "Attic",
+        "desc": "You climb the rungs to a dusty attic. The air is stiff and hot.\nThere is a window overlooking a table, and on the table rests a set of keys. Your keys! You can finally leave!\nAs you pick them up, you hear a sound from outside. When you look through the small window, you see two being staring back at you.\nTheir eyes are focused on you. Their teeth shimmer. They are identical to one another in nearly every way, except that one is holding a large mallet.\nYou have to get out of this house...",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "ATTIC2",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "LAND4",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "ATTIC2",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "ATTIC2",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "ATTIC2": {
+        "name": "WHAT ARE YOU DOING?!",
+        "desc": "You think maybe they didn't see you (they did) and maybe you can just hide up here forever (you can't)...",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "LAND4",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LAND4": { 
+        "name": "Top of the stairs",
+        "desc": "You trip down the ladder, missing more than one rung in the process, praying that you can make it out alive.\nFrom the top of the stairs, you hear the familiar sound of keys jingling outside of the door.\nYour brain is screaming at you to leave this awful place, but the only exit you see is the door that is about to open to the SOUTH...",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "FOYER2",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "CANTHIDE",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "CANTHIDE",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "CANTHIDE",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CANTHIDE": {
+        "name": " ",
+        "desc": "YOU CANNOT HIDE FROM THEM  YOU CANNOT HIDE FROM THEM  YOU CANNOT HIDE FROM THEM  YOU CANNOT HIDE FROM THEM  YOU CANNOT HIDE FROM THEM  YOU CANNOT HIDE FROM THEM  YOU CANNOT HIDE FROM THEM  YOU CANNOT HIDE FROM THEM  YOU CANNOT HIDE FROM THEM  YOU CANNOT HIDE FROM THEM  YOU CANNOT HIDE FROM THEM  YOU CANNOT HIDE FROM THEM  YOU CANNOT HIDE FROM THEM  YOU CANNOT HIDE FROM THEM  YOU CANNOT HIDE FROM THEM  YOU CANNOT HIDE FROM THEM  YOU CANNOT HIDE FROM THEM  YOU CANNOT HIDE FROM THEM  YOU CANNOT HIDE FROM THEM  YOU CANNOT HIDE FROM THEM  YOU CANNOT HIDE FROM THEM  YOU CANNOT HIDE FROM THEM  YOU CANNOT HIDE FROM THEM  ",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "FOYER2",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "FOYER2": {
+        "name": "Foyer",
+        "desc": "As you practically run down the flight of stairs, you see the doorknob in front of you turn  s l o w l y...\n",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "FOYER3",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "GETOUT",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "GETOUT",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "GETOUT",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "GETOUT": {
+        "name": " ",
+        "desc": "G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  G E T   O U T !  ",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "FOYER3",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "FOYER3": {
+        "name": "End of the line...",
+        "desc": "The door swings open, and for the first time you smell fresh air, freshly cut grass, flowers...\nThis almost distracts from the two hulking creatures blocking your path to the outside world.\nA large hand clasps you on one shoulder as the two beings speak in one unified voice from two open maws:\n W E L C O M E  T O  Y O U R \nF   O   R   E   V   E   R      H   O   M   E",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "4YER",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "4YER",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "FINAL",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "4YER",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "4YER": {
+        "name": "WHAT ARE YOU WAITING FOR??!!",
+        "desc": "The twin humanoids stare blankly at you, waiting... waiting for what?!\nYou have to get out. You have to head SOUTH. You have to end this, once and for all.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "FINAL",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "FINAL": {
+        "name": "Freedom...",
+        "desc": "You shove straight through the twins, only to find many more people on the lawn.\nVarious humans carry cameras, boom mics, lights...\n...\nThat's when you remember: your home is being renovated for HGTV's 'Property Brothers.' \n\n    T H E    E N D   ",
+        "exits": [],
+        "inventory": []
+      }
+    }
+  }
