@@ -224,7 +224,7 @@
       },
       "HALL1": {
         "name": "Hallway",
-        "desc": "A short hallway sits mostly intact to the north of the living room.\nClosed doors exist to the NORTH and WEST.",
+        "desc": "A short hallway sits mostly intact, save for the strips of wallpaper falling down around you.\nIt almost looks like curled fingers grasping for you as you walk...\nClosed doors exist to the NORTH and WEST.\nTo the SOUTH is the living room.",
         "exits": [
           {
             "verb": "EAST",
@@ -278,7 +278,7 @@
       },
       "BASEM": {
         "name": "Basement",
-        "desc": "You stumble down a dim set of stairs.\nAs you reach the bottom step, your eyes begin to adjust to the darkness.\nScrawled onto the foundation of this home is some sort of arcane language that you cannot read.\nAs you stare into the concrete, you feel as though you are going mad.\nWhat type of horrid rituals did they do down here? Better yet, are they finished?\nYou think you should go back EAST up the stairs as fast as you can...",
+        "desc": "You stumble down a dim set of stairs.\nAs you reach the bottom step, your eyes begin to adjust to the darkness.\nScrawled in what you hope is spraypaint onto the foundation of this home is some sort of arcane language that you cannot read.\nAs you stare into the concrete, you feel as though you are going mad.\nWhat type of horrid rituals did they do down here? Better yet, are they finished?\nYou think you should go back EAST up the stairs as fast as you can...",
         "exits": [
           {
             "verb": "EAST",
@@ -430,7 +430,7 @@
       },
       "MBR1": {
         "name": "The master bedroom",
-        "desc": "This room does not appear to be lived-in. The bed, the wallpaper, the furniture...\n it all seems brand new./nYou feel a sense of calm for the first time today.",
+        "desc": "This room does not appear to be lived-in. The bed, the wallpaper, the furniture...\n it all seems brand new.\nYou feel a sense of calm for the first time today.\nTo the EAST is a door, slightly ajar, with a light hum coming from beyond it.",
         "exits": [
           {
             "verb": "NORTH",
@@ -576,7 +576,7 @@
       },
       "ATTIC": {
         "name": "Attic",
-        "desc": "You climb the rungs to a dusty attic. The air is stiff and hot.\nThere is a window overlooking a table, and on the table rests a set of keys. Your keys! You can finally leave!\nAs you pick them up, you hear a sound from outside. When you look through the small window, you see two being staring back at you.\nTheir eyes are focused on you. Their teeth shimmer. They are identical to one another in nearly every way, except that one is holding a large mallet.\nYou have to get out of this house...",
+        "desc": "You climb the rungs to a dusty attic. The air is stiff and hot.\nThere is a window overlooking a table, and on the table rests a set of keys. Your keys! You can finally leave!\nAs you pick them up, you hear a sound from outside. When you look through the small window, you see two beings staring back at you.\nTheir eyes are focused on you. Their teeth shimmer. They are identical to one another in nearly every way, except that one is holding a large mallet.\nYou have to get out of this house...",
         "exits": [
           {
             "verb": "WEST",
@@ -732,7 +732,7 @@
       },
       "FINAL": {
         "name": "Freedom...",
-        "desc": "You shove straight through the twins, only to find many more people on the lawn.\nVarious humans carry cameras, boom mics, lights...\n...\nThat's when you remember: your home is being renovated for HGTV's 'Property Brothers.' \n\n    T H E    E N D   ",
+        "desc": "You shove straight through the twins, only to find many more people on the lawn.\nVarious humans carry cameras, boom mics, lights...\n...\nThat's when you remember: your home is being renovated for HGTV's 'Property Brothers.' \n\n    T H E    E N D   \n\n\n",
         "exits": [],
         "inventory": []
       }
