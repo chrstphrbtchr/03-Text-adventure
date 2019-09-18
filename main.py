@@ -14,7 +14,8 @@ def render(game,current):
     with open('THE_UNREAL_ESTATE.json') as json_file:        
         game = json.load(json_file)
         # I could not figure out a way to make this code run without
-        # typing the above lines a lot, so sorry about that.
+        # typing the above lines a lot, so sorry about that. It has
+        # something to do with global variables...
     r = game["rooms"]
     c = r[current]
     print("\n")
@@ -39,7 +40,10 @@ def update(user_input, game, current, verb):
         if user_input == e["verb"] and e['target'] !='NoExit':
             return e['target']
     else:
-        print("\nYou shake your head and try again...")
+        if user_input != "QUIT".upper():
+            print("\nYou shake your head and try again...")
+        else:
+            print("\n\n\nY O U ' L L   B E   B A C K . . . \n\n")
         return current
     
 def normalizedVerb(user_input, verbs):
@@ -74,8 +78,10 @@ def main():
         with open('THE_UNREAL_ESTATE.json') as json_file:
             game = json.load(json_file)
         current = update(user_input, game["rooms"], current, game["verbs"])
-
+        if user_input == "QUIT".upper():
+            quit = True
     return render
+
 
 
 if __name__ == '__main__':
